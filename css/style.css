@@ -1,0 +1,278 @@
+/*RESET*/
+*,html,body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,label,fieldset,input,p,blockquote,th,td {
+	margin:0;padding:0;
+}
+
+table {
+	border-collapse:collapse;border-spacing:0;
+}
+
+fieldset,img {
+	border:0;
+}
+
+address,caption,cite,code,dfn,em,th,var {
+	font-style:normal;font-weight:normal;
+}
+
+ol,ul,li {
+	list-style:none;
+}
+
+caption,th{
+	text-align:left;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-weight:normal;clear: both;
+}
+
+q:before,q:after {
+	content:'';
+}
+
+a img {
+	border:none;
+}
+
+/*STYLE*/
+body {
+	background:#FFF;
+}
+
+h1 {
+	width:100%;
+	text-align:center;
+	font:normal 46px "Arial Narrow", Arial, Helvetica, sans-serif;
+	color:#30363B;
+	padding:30px 0 30px 0;
+}
+
+fieldset {
+	display:block;
+	width:600px;
+	margin:30px auto;
+	border-left:4px solid #e45f56;
+	font:bold 14px Arial, Helvetica, sans-serif;
+	color:#262626;
+}
+
+.errortxt {
+	margin:0 0 10px 5px;
+}
+
+.errortxt:last-child {
+	margin:0 0 0 5px;
+}
+
+.errortxt span {
+	color:#e45f56;
+}
+
+form {
+	display:block;
+	max-width:600px;
+	margin:0 auto;
+}
+
+form {
+	font:bold 14px Arial, Helvetica, sans-serif;
+	color:#999;
+}
+
+form #name, form #email, form #text_message {
+	display:block;
+	margin:5px 0 15px 0;
+	width:96%;
+	padding:15px 2%;
+	background:#F5F6F6;
+	border:1px solid #E1E1E1;
+	outline:none;
+	font:bold 14px Arial, Helvetica, sans-serif;
+	color:#30363B;
+	-webkit-appearance:none;
+	-webkit-border-radius:0px;
+	-webkit-transition:background .2s linear;
+	-moz-transition:background .1s linear;
+	-o-transition:background .1s linear;
+	-ms-transition:background .1s linear;
+	transition:background .2s linear;
+}
+
+
+
+form #name:focus, form #email:focus, form #text_message:focus {
+	background:#FFF;
+}
+
+form div {
+	margin:5px 0 15px 0;
+	font:bold 14px Arial, Helvetica, sans-serif;
+	color:#999;
+}
+
+form div input {
+	display:inline-block;
+	font:bold 14px Arial, Helvetica, sans-serif;
+	color:#999;
+	background:#FFF;
+	border:0;
+	border-bottom:1px solid #E1E1E1;
+	outline:none;
+	width:20px;
+	padding:0;
+	text-align:center;
+}
+
+form .form-input-button {
+	outline:0;
+	margin:0 15px 15px 0;
+	padding:15px 10px;
+	background:#F5F6F6;
+	color:#999;
+	font:bold 14px Arial, Helvetica, sans-serif;
+	border:1px solid #E1E1E1;
+	-webkit-appearance:none;
+	-webkit-border-radius:0px;
+	cursor:pointer;
+	-webkit-transition:background .2s linear;
+	-moz-transition:background .1s linear;
+	-o-transition:background .1s linear;
+	-ms-transition:background .1s linear;
+	transition:background .2s linear;
+}
+
+form .form-input-button:hover {
+	background:#FFF;
+}
+
+form .error {
+	color:#e45f56;
+}
+
+form .send {
+	color:#48A770;
+}
+
+
+.comments {
+	display:block;
+	max-width:600px;
+	margin:20px auto 20px auto;
+	border-top:1px dashed #E1E1E1;
+	border-bottom:1px dashed #E1E1E1;
+}
+
+.comments li {
+	margin:20px 0 20px 0;
+	border:3px solid #E1E1E1;
+	background:#F5F6F6;
+}
+
+.comments li div {
+	position:relative;
+	padding:10px 10px 10px 40px;
+	background:#FFF;
+	font:bold 14px Arial, Helvetica, sans-serif;
+	color:#999;
+}
+
+.comments li div .date {
+	display:block;
+	position:absolute;
+	right:0;
+	top:0;
+	margin:10px 10px 0 0;
+	text-transform:uppercase;
+}
+
+.comments li div .avatar {
+	display:block;
+	position:absolute;
+	left:0;
+	top:0;
+	margin:10px 0 0 -30px;
+}
+
+.comments li p {
+	margin:15px 0 15px 0;
+	padding:0 0 0 40px;
+	font:normal 16px Arial, Helvetica, sans-serif;
+	color:#999;
+}
+
+.paginator {
+	position:relative;
+	max-width:600px;
+	margin:0 auto 30px auto;
+}
+
+.paginator li {
+	display:block;
+	float:left;
+	width:30px;
+	margin-right:5px;
+	padding:7px 0;
+	background:#F5F6F6;
+	font:bold 13px Arial, Helvetica, sans-serif;
+	text-align:center;
+}
+
+.paginator li a {
+	display:block;
+	width:100%;
+	height:100%;
+	color:#999;
+	text-decoration:none;
+}
+
+.paginator li:hover {
+	background:#79BBDD;
+	color:#FFF;
+}
+
+.paginator li.current {
+	background:#46a4da;
+	color:#FFF;
+}
+
+.paginator span {
+	font:bold 13px Arial, Helvetica, sans-serif;
+	color:#999;
+	display:block;
+	position:absolute;
+	right:0;
+	top:0;
+}
+
+.paginator span a {
+	display:inline-block;
+	width:28px;
+	padding:6px 0;
+	margin-left:5px;
+	font:bold 13px Arial, Helvetica, sans-serif;
+	text-decoration:none;
+	text-align:center;
+	color:#999;
+	background:#FFF;
+	border:1px solid #F5F6F6;
+}
+
+.paginator span a:hover {
+	background:#F5F6F6;
+	border:1px solid #E1E1E1;
+}
+
+.paginator span a.activeNum {
+	background:#F5F6F6;
+	border:1px solid #E1E1E1;
+}
+
+#text {
+	position:absolute;
+	margin-top:-10px;
+}
+
+.cb {
+	clear:both;
+}
